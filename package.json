@@ -1,0 +1,27 @@
+{
+  "name": "code-studio",
+  "version": "1.0.0",
+  "description": "Browser-based code editor — file tree, tabs, sandboxed HTML preview, localStorage persistence. No server, no build, no deps.",
+  "license": "MIT",
+  "author": "Fish Gang Co. (https://fish-gang.netlify.app/Company)",
+  "type": "commonjs",
+  "main": "lib/store.js",
+  "files": [
+    "lib",
+    "css",
+    "js",
+    "tests",
+    "docs",
+    "index.html",
+    "server.js",
+    "demo.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "demo": "node demo.js",
+    "test": "node --test tests/"
+  },
+  "homepage": "https://fish-gang.netlify.app/Company"
+}
