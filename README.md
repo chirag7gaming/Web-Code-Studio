@@ -99,24 +99,7 @@ Covers list/get/set/remove/create, persistence across store instances,
 filename collision, corrupted JSON, storage failure, HTML template shape,
 and `reload()`.
 
-## Downstream forks
-
-The hosted `Code-Studio.html` is a fork of `index.html` from this repo.
-Known fork divergences:
-
-- **Storage key:** upstream uses `code-studio-files`; the hosted fork uses
-  `fg_code_studio_files`. Files created in one will not appear in the other.
-- **Asset paths:** upstream uses relative (`css/theme.css`); the hosted fork
-  uses absolute (`/css/theme.css`) so it works under any route.
-- **Tree rendering:** upstream uses `textContent` for filenames (filenames are
-  user-supplied via `prompt()`; a hostile name like `<img onerror=...>`
-  would be rendered as text, not markup). The fork uses `innerHTML` —
-  equivalent for reasonable filenames, but a markup-bearing name would inject
-  into the page. Consider this if you fork downstream.
-- **"Get HTML Runner" banner:** the hosted fork has a bottom bar that links to
-  `/Appstore-data-HTML-Runner`. Upstream has no such link.
-- **Favicon:** the hosted fork includes a `<link rel="icon">`. Upstream ships
-  no favicon.
+## Forks
 
 Forks are welcome — the contract is the `.cs-*` classnames, the preview
 `<iframe sandbox>` attribute, and the storage schema above.
